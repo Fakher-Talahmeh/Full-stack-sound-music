@@ -1,0 +1,13 @@
+<header>
+  <h1>Sound Music</h1>
+  <div class="upload-music" appDropdown>
+    <i class="fa-solid fa-upload"></i>
+    <form class="upload-form">
+      <div class="upload-inner-form">
+        <input type="file" class="upload-file" (change)="getFile($event)"/>
+        <input type="text" name="" class="upload-caption" placeholder="Caption" id="" #caption (change)="caption.value"  />
+        <button type="button" class="upload-submit" (click)="onUpload()">Upload</button>
+      </div>
+    </form>
+  </div>
+</header>

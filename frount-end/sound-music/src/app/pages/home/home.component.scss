@@ -1,0 +1,30 @@
+.home-container {
+  width: 100%;
+  height: 100%;
+  background-color: darkred;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding:15px;
+}
+.music-card {
+  display: flex;
+  width: 20%;
+  margin: 5%;
+  height: 25%;
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
+  flex-direction: column;
+  gap: 10px;
+}
+.music-card > audio {
+  width: 100%;
+}
+.music-card-inner {
+  display: flex;
+  flex-direction: column;
+}
+.music-card-inner > * {
+  margin-bottom: 30px;
+}

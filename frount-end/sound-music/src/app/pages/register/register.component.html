@@ -1,0 +1,11 @@
+<div class="register-container">
+    <form class="register-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <h1>Register</h1>
+        <input type="text" name="" placeholder="username" id="" class="register-username" formControlName="username">
+        <input type="email" name="" placeholder="email" id="" class="register-email" formControlName="email">
+        <input type="password" name="" id="" placeholder="password" class="register-password" formControlName="password">
+        <input type="password" name="" id="" placeholder="password" class="register-password" formControlName="password2">
+        
+        <button class="register-submit" [disabled]="!registerForm">Submit</button>
+    </form>
+</div>

@@ -1,0 +1,14 @@
+<div class="home-container">
+    <div class="music-card" *ngFor="let post of data?.posts">
+        <audio controls>
+            <source src="http://127.0.0.1:8000/{{post.music}}" type="audio/mp3">
+          </audio>
+          <div class="music-card-inner">
+            
+            <h2>{{post.user}}</h2>
+            <h5>{{post.caption}}</h5>
+            <p class="date-time">{{post.created_At}}</p>
+
+          </div>
+    </div>
+</div>
